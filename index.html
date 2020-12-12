@@ -10,21 +10,28 @@
 
     <body>
         <header>
-            <img src="images/logo/logo_reservia.png" alt="logo Reservia">
-            <nav class="menu">
-                <a href="">Hébergements</a> <!-- doit renvoyer sur la section de la page -->
-                <a href="">Activités</a> <!-- doit renvoyer sur la section de la page -->
-                <a href="inscription.php">S'inscrire</a>
-            </nav>
+            <img src="images/logo/logo_reservia.png" alt="logo Reservia" class="logo">
+            <div> 
+                <nav>
+                    <div class="header hebergement"><a href="#herbegement" title="Accès hébergement">Hébergements</a></div> <!-- doit renvoyer sur la section de la page -->
+                    <div class="header activites"><a href="#activites" title="Accès activités" class="lienhypertexteactivites">Activités</a></div> <!-- doit renvoyer sur la section de la page -->
+                    <div class="header inscription"><a href="">S'inscrire</a></div>
+                 </nav>
+            </div>
+           
         </header>    
     
-        <section>
-            <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p><br>
+        <section> <!-- cadre recherche et filtre -->
+            <div class="introduction">
+                <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
 
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" name="nomville" maxlength="100" Value="Marseille, France"> <!-- Usage "value" plutôt que "placeholder" car recherche déjà effectué pour le prototype-->
-            <input type="submit" value="Rechercher">
+            <div class="recherche">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="nomville" maxlength="100" Value="Marseille, France" class="nomville"> <!-- Usage "value" plutôt que "placeholder" car recherche déjà effectué pour le prototype-->
+                <input type="submit" value="Rechercher" class="envoie">
+            </div>
             <p>
                 <strong>Filtres</strong>
                 <i class="fas fa-money-bill-wave">Économique</i>
@@ -36,12 +43,12 @@
         </section>
 
          <div> <!-- possible changer par <section> -->
-            <h1>Hébergements à Marseille</h1> <!-- liste des hébergements à Marseille -->
+            <h1 id="hebergement">Hébergements à Marseille</h1> <!-- liste des hébergements à Marseille -->
             <div class="liste_hebergement">
                 <div>
                     <img src="images/hebergements/4_small/auberge_cannebiere_m_loke.jpg" alt="Auberge de la Cannebière, crédit Marcus Loke"> <br><h2>Auberge la Cannebière</h2> <!-- possible usage de titre pour que ce soit bien en gras-->
                     <br>Nuit à partir de <strong>25€</strong> <br> 
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i>
                 </div>
                 <div>
                     <img src="images/hebergements/4_small/hotel_port_f_kleber.jpg" alt="Hôtel du port, crédit Fred Kleber "> <br><strong>Hôtel du port</strong>
@@ -90,7 +97,7 @@
         </div>
 
         <section> <!-- liste des activités à Marseille -->
-            <h1>Activité à Marseille</h1>
+            <h1 id="activites">Activités à Marseille</h1>
             <div>
                 <div>
                     <img src="images/activites/4_small/vieux_port_r_laithienne.jpg" alt="Photo du Vieux Port, crédit Reno Laithienne"><br><h5>Vieux Port</h5>
