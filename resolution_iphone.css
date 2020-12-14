@@ -5,16 +5,11 @@
 }
 
 /* mise en forme éléments généraux */
-html, body
-{
-    margin: 0;
-    padding: 0;
-}
 body
 {
     font-family: 'Raleway';
     max-width: auto;
-    margin: 10px;
+    margin: 10;
 }
 
 /* mise en forme header */
@@ -45,35 +40,31 @@ a.lienhypertexteactivites:visited
 }
 .logo
 {
-    height: 75px;
+    height: 25px;
     float: left;
-    padding-top: 30px;
+    padding-top: 5px;
 }
-nav
+nav 
 {
-    display: flex;
-    font-size: 20px;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;    
+    font-size: x-small;
+    display: flex ;
 }
 .hebergement
 {
-    border-top: 3px #0065FC solid;
-    margin-right: 60px ;
-    padding-top: 50px;   
-    width: 200px; 
+    margin-top: px;   
     text-align: center;
+    border-top: none;
+    border-bottom: 2px #0065FC solid;
 }
 .activites
 {
     margin-right: 60px;
     padding-top: 53px;
+    border-bottom: 2px #F2F2F2 solid;
 }
 .inscription
 {
-    padding-top: 53px;
-    margin-right: 10px;
+    padding-top: 15px;
     color: #0065FC;
     font-weight: bold;
 }
@@ -83,8 +74,6 @@ cadre autour de la recherche et des filtres  */
 .introduction
 {
     clear: both;
-    margin-top: 50px;
-    line-height: 15px;
 }
 .recherche
 {
@@ -98,7 +87,7 @@ cadre autour de la recherche et des filtres  */
     text-align: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding-top: 7px;
+    padding-top: 10px;
 }
 .nomville
 {
@@ -121,19 +110,13 @@ cadre autour de la recherche et des filtres  */
 }
 .filtres
 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
     margin-right: 20px;
     font-size: 1.1em;
     height: 50px;
 }
-.titrefiltres
-{
-    padding-top: 15px;
-}
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /* icones des filtres */
 {
+    margin-right: 10px;
     height: 30px; width: 30px;
     border-radius: 20px;
     color: #0065FC;
@@ -148,46 +131,8 @@ cadre autour de la recherche et des filtres  */
     border-radius: 20px;
     width: 130px;
     text-align: center;
-    padding-top: 5px;
-    margin-right: 10px;
 }
-.fa-info-circle
-{
-    background-color: #0065FC;
-    color: white;
-    border: 1px #F2F2F2 solid ;
-    border-radius: 20px;    
-}
-/* mise en page cadre hebergement */
-.section_hebergement_populaire
-{
-    display: flex;
-    flex-direction: row;
-}
-.section_hebergement
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
-.section_populaire
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
-.liste_hebergement
-{
-    display: flex;
-    flex-flow: row wrap;
-}
-.img_auberge_cannebiere, .img_hotel_port, .img_hotel_mouettes, .img_hotel_mer, .img_auberge_panier, .img_hotel_amina, .img_hotel_soleilmatin, .img_chambrehote_coeureau, .img_hotel_bleublanc
-{
-    height: 200px;
-}
-.liste_populaire
-{
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 
@@ -198,12 +143,13 @@ footer
 {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #F2F2F2;
     margin-top: 20px ;
 }
-.a_propos, .nos_hebergements, .assistance
+/* .a_propos, .nos_hebergements, .assistance
 {
     margin: 15px;
-    padding: 15px;
-    padding-right: 100px;
+    padding-bottom: 5px;
 }
