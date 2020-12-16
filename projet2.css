@@ -13,7 +13,7 @@ html, body
 body
 {
     font-family: 'Raleway';
-    max-width: auto;
+    max-width: 100%;
     margin: 10px;
 }
 
@@ -151,6 +151,8 @@ cadre autour de la recherche et des filtres  */
     padding-top: 5px;
     margin-right: 10px;
 }
+
+/* mise en page information nombres logement ville */
 .fa-info-circle
 {
     background-color: #0065FC;
@@ -158,40 +160,164 @@ cadre autour de la recherche et des filtres  */
     border: 1px #F2F2F2 solid ;
     border-radius: 20px;    
 }
+
 /* mise en page cadre hebergement */
-.section_hebergement_populaire
-{
-    display: flex;
-    flex-direction: row;
-}
-.section_hebergement
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
-.section_populaire
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-}
 .liste_hebergement
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    width: 70%;
+    float: left;
+    background-color: #F2F2F2;
+    border-radius: 10px;
 }
-.img_auberge_cannebiere, .img_hotel_port, .img_hotel_mouettes, .img_hotel_mer, .img_auberge_panier, .img_hotel_amina, .img_hotel_soleilmatin, .img_chambrehote_coeureau, .img_hotel_bleublanc
+.img_hebergement          /* .img_auberge_cannebiere, .img_hotel_port, .img_hotel_mouettes, .img_hotel_mer, .img_auberge_panier, .img_hotel_amina */
 {
-    height: 200px;
+    height: 120px;
+    border-radius: 10px;
+    clip-path: inset(0 0 10px 0);
 }
+.box_hebergement
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cadre_hebergement
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 15px;
+    justify-content: space-between;
+    width: 26%;
+    line-height: 6px;
+}
+
+/* mise en forme titre hebergement et hebergement populaire */
+h1
+{
+    font-size: 25px;
+}
+.titre_h2
+{
+    font-size: 16px;
+}
+
+/* mise en page cadre les plus populaires */ 
 .liste_populaire
 {
     display: flex;
     flex-direction: column;
+    width: 25%;
+    float: right;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 15px;
+}
+.fa-chart-line
+{
+    text-align: right; 
+}
+.img_populaire
+{
+    height: 127px;
+    border-radius: 10px;
+    clip-path: inset(0 10px 0 0);
+    padding: 5px;
+    width: 140px;
+}
+.cadre_populaire
+{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+.box_information_populaire
+{
+    display: flex;
+    flex-direction: column;
+}
+.note_populaire
+{
+    margin-top: 10px;
+}
+/* mise en forme étoiles des notes */ 
+.fa-star
+{
+    color: #0065FC;
+}
+.fa-star.empty
+{
+    color: #F2F2F2;
 }
 
-
-
-
+/* mise en page activités 
+Mise en place de la disposition */ 
+.section_activite
+{
+    clear: both;
+    margin-top: 20px;
+}
+.activite_ville
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.activite_ville_division1, .activite_ville_division2
+{
+    display: flex;
+    flex-direction: column;
+}
+.box_cadre
+{
+    width: 24%;
+}
+/* Mise en place des cadres entourant les activités */ 
+.cadre_activite
+{
+    display: flex;
+    flex-direction: column;
+    border: 3px #F2F2F2 solid ;
+    border-radius: 20px;
+    box-shadow: 1px 1px #F2F2F2 ;
+    margin-bottom: 30px;
+}
+/* Mise en forme des images */ 
+.img_activite 
+{
+    border-radius: 20px;
+    clip-path: inset(0 0 50px 0);
+}
+.img_activite.vieux_port, .img_activite.parc_calanques
+{
+    height: 500px;
+}
+.img_activite.fort_pomegues
+{
+    height: 275px;
+}
+.img_activite.ile_frioul
+{
+    height: 200px;
+}
+.img_activite.dame_garde, .img_activite.parc_longchamp
+{
+    height: 240px;
+}
+/* Mise en forme des noms activités */
+.nom_lieu_activite
+{
+    font-size: 15px;
+    padding-left: 10px;
+}
 
 /* mise en forme pied de page */
 footer
@@ -205,5 +331,6 @@ footer
 {
     margin: 15px;
     padding: 15px;
-    padding-right: 100px;
+    padding-right: 300px;
+    line-height: 30px;
 }
