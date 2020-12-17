@@ -13,11 +13,13 @@ html, body
 body
 {
     font-family: 'Raleway';
-    max-width: 100%;
+    max-width: 95%;
     margin: 10px;
+    margin-left: 50px;
 }
 
-/* mise en forme header */
+/* mise en forme header 
+Mise en forme des liens */
 a
 {
     text-decoration: none;
@@ -43,12 +45,14 @@ a.lienhypertexteactivites:visited
 {
     color: black;
 }
+/* mise en forme logo */
 .logo
 {
     height: 75px;
     float: left;
     padding-top: 30px;
 }
+/*  mise en forme menu de navigation */ 
 nav
 {
     display: flex;
@@ -79,17 +83,19 @@ nav
 }
 
 /* mise en forme corps de la page 
-cadre autour de la recherche et des filtres  */
+ lignes de présentation du site */
 .introduction
 {
     clear: both;
     margin-top: 50px;
     line-height: 15px;
 }
+
+/* cadre recherche */
 .recherche
 {
     display: flex;  
-    height: 30px ;
+    height: 40px ;
 }
 .fa-map-marker-alt /* icone map sur la recherche */
 {
@@ -108,7 +114,7 @@ cadre autour de la recherche et des filtres  */
     padding-left: 10px;
     font-size: 1em;
 }
-.envoie
+.envoi
 {
     background-color: #0065FC;
     color: white;
@@ -119,6 +125,12 @@ cadre autour de la recherche et des filtres  */
     font-weight: bold;
     width: 115px;
 }
+.envoi_petite_resolution
+{
+    display: none;
+}
+
+/* cadre filtres */ 
 .filtres
 {
     display: flex;
@@ -126,11 +138,12 @@ cadre autour de la recherche et des filtres  */
     margin-top: 25px;
     margin-right: 20px;
     font-size: 1.1em;
-    height: 50px;
+    height: 5px;
 }
 .titrefiltres
 {
     padding-top: 15px;
+    margin-right: 25px;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /* icones des filtres */
 {
@@ -144,21 +157,27 @@ cadre autour de la recherche et des filtres  */
 {
     font-size: 1em;
     font-weight: bold;
-    border: 2px #F2F2F2 solid;
+    border: 3px #F2F2F2 solid;
+    border-left: none;
     border-radius: 20px;
-    width: 130px;
+    width: auto;
     text-align: center;
-    padding-top: 5px;
-    margin-right: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    margin-right: 25px; 
 }
-
+.information_filtres
+{
+    padding-left: 10px;
+}
 /* mise en page information nombres logement ville */
 .fa-info-circle
 {
     background-color: #0065FC;
     color: white;
     border: 1px #F2F2F2 solid ;
-    border-radius: 20px;    
+    border-radius: 20px; 
+    margin-top: 50px;   
 }
 
 /* mise en page cadre hebergement */
@@ -166,15 +185,16 @@ cadre autour de la recherche et des filtres  */
 {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 68%;
     float: left;
     background-color: #F2F2F2;
     border-radius: 10px;
+    padding: 21px;
 }
 .img_hebergement          /* .img_auberge_cannebiere, .img_hotel_port, .img_hotel_mouettes, .img_hotel_mer, .img_auberge_panier, .img_hotel_amina */
 {
-    height: 120px;
-    border-radius: 10px;
+    height: 95px;
+    border-radius: 20px;
     clip-path: inset(0 0 10px 0);
 }
 .box_hebergement
@@ -182,6 +202,7 @@ cadre autour de la recherche et des filtres  */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 .cadre_hebergement
 {
@@ -189,12 +210,19 @@ cadre autour de la recherche et des filtres  */
     flex-direction: column;
     align-self: center;
     background-color: white;
-    border-radius: 10px;
-    padding: 3px;
+    border-radius: 20px;
+    padding: 4px;
+    padding-bottom: 7px;
     margin: 15px;
+    margin-left: 25px;
     justify-content: space-between;
-    width: 26%;
+    width: 28%;
     line-height: 6px;
+    box-shadow: 1px 1px #F2F2F2 ;
+}
+.information_hebergement
+{
+    padding-left: 20px;
 }
 
 /* mise en forme titre hebergement et hebergement populaire */
@@ -224,10 +252,10 @@ h1
 }
 .img_populaire
 {
-    height: 127px;
+    height: 111px;
     border-radius: 10px;
     clip-path: inset(0 10px 0 0);
-    padding: 5px;
+    padding: 6px;
     width: 140px;
 }
 .cadre_populaire
@@ -238,6 +266,7 @@ h1
     border: 2px #F2F2F2 solid;
     border-radius: 10px;
     margin: 10px;
+    box-shadow: 1px 1px #F2F2F2 ;
 }
 .box_information_populaire
 {
@@ -263,7 +292,7 @@ Mise en place de la disposition */
 .section_activite
 {
     clear: both;
-    margin-top: 20px;
+    padding-top: 30px;
 }
 .activite_ville
 {
@@ -289,6 +318,7 @@ Mise en place de la disposition */
     border-radius: 20px;
     box-shadow: 1px 1px #F2F2F2 ;
     margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 /* Mise en forme des images */ 
 .img_activite 
@@ -316,7 +346,7 @@ Mise en place de la disposition */
 .nom_lieu_activite
 {
     font-size: 15px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 /* mise en forme pied de page */
@@ -333,4 +363,178 @@ footer
     padding: 15px;
     padding-right: 300px;
     line-height: 30px;
+}
+
+
+/* Mise en page pour les écrans inférieur à 1024px */
+@media screen and (max-width: 1024px)
+{
+    /* modification header */
+    .logo
+    {
+        height: 55px ;
+        padding-top: 15px;
+    }
+    .hebergement
+    {
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-top: 30px;
+    }
+    .activites
+    {
+        border-bottom: 2px #F2F2F2 solid;
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+    .inscription
+    {
+        padding-top: 30px;
+    }
+
+    /* modification corps de la page */ 
+    .introduction
+    {
+        line-height: initial;
+    }
+    .recherche
+    {
+        margin-top: 25px;
+    }
+    .envoi
+    {
+        display: none;
+    }
+    .envoi_petite_resolution
+    {
+        display: initial;
+        background-color: #0065FC;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 35px;
+    }
+    .fa-info-circle
+    {
+        margin-top: 100px;
+    }
+    .cadre_populaire
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .liste_hebergement
+    {
+        width: 60%;
+        line-height: initial;
+    }
+    .cadre_hebergement
+    {
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 750px) /* modification supplémentaire */
+{
+    /* modification header */
+    .logo
+    {
+        height: 40px ;
+        padding-top: 15px;
+    }
+    .hebergement
+    {
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-top: 80px;
+    }
+    .activites
+    {
+        border-bottom: 2px #F2F2F2 solid;
+        padding-top: 80px;
+        padding-left: 25px;
+    }
+    .inscription
+    {
+        padding-top: 25px;
+    }
+    /* modification body */
+    .fa-info-circle
+    {
+        margin-top: 150px;
+    }
+    .liste_populaire
+    {
+        width: 90%;
+    }
+    .cadre_populaire
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .note_populaire
+    {
+        margin-top: 20px;
+    }
+    .liste_hebergement
+    {
+        width: 90%;
+        margin-top: 25px;
+        background-color: initial;
+    }
+    .box_hebergement
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .cadre_hebergement
+    {
+        width: 100%;
+        margin-left: -25px;
+        border: 2px #F2F2F2 solid;
+        box-shadow: 3px 3px #F2F2F2;
+    }
+    .img_hebergement
+    {
+        height: 130px;
+        clip-path: inset(0 0 20px 0);
+    }
+    .information_hebergement
+    {
+        padding-left: 30px;
+    }
+    .activite_ville
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box_cadre
+    {
+        width: 90%;
+    }
+    .img_activite
+    {
+        height: 150px;
+    }
+    footer
+    {
+        padding: 0; margin: 0;
+        display: flex;
+        flex-direction: column;
+        line-break: initial;
+        width: 90%;
+    }
+    .a_propos, .nos_hebergements
+    {
+        white-space: nowrap;
+        margin-bottom: -30px;
+    }
+    .assistance
+    {
+        white-space: nowrap;
+        margin-bottom: -20px;
+    }
 }
