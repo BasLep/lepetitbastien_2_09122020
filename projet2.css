@@ -145,13 +145,18 @@ nav
     padding-top: 15px;
     margin-right: 25px;
 }
+.groupe_information_filtres
+{
+    margin-top: 0x;
+}
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /* icones des filtres */
 {
-    height: 30px; width: 30px;
+    height: 30px; width: 40px;
     border-radius: 20px;
     color: #0065FC;
     background-color: #deebff ;
     text-align: center;
+    padding-top: 15px;
 }
 .ecritfiltres /* écrit des filtres */
 {
@@ -162,7 +167,7 @@ nav
     border-radius: 20px;
     width: auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 10px; padding-bottom: 10px;
     padding-right: 20px;
     margin-right: 25px; 
 }
@@ -414,9 +419,21 @@ footer
         border-radius: 10px;
         width: 35px;
     }
+    .groupe_information_filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .ecritfiltres
+    {
+        padding: 0px;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
     .fa-info-circle
     {
-        margin-top: 100px;
+        margin-top: 165px;
     }
     .cadre_populaire
     {
@@ -433,6 +450,23 @@ footer
         width: 35%;
         display: flex;
         flex-wrap: wrap;
+    }
+    .information_hebergement
+    {
+        white-space: nowrap;
+    }
+    .activite_ville
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box_cadre
+    {
+        width: 90%;
+    }
+    .img_activite
+    {
+        max-height: 200px;
     }
 }
 
@@ -464,7 +498,7 @@ footer
     /* modification body */
     .fa-info-circle
     {
-        margin-top: 150px;
+        margin-top: 240px;
     }
     .liste_populaire
     {
@@ -505,19 +539,6 @@ footer
     .information_hebergement
     {
         padding-left: 30px;
-    }
-    .activite_ville
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .box_cadre
-    {
-        width: 90%;
-    }
-    .img_activite
-    {
-        height: 150px;
     }
     footer
     {
