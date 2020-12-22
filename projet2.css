@@ -54,30 +54,18 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     list-style-type: none;
     font-size: 15px;
+    max-width: 450px;
+    padding-inline-start: 0px;
 }
 .puce_menu
 {
     display: inline;
+    padding-left: ;
 }
-/* .hebergement
+.menu_hebergement
 {
-    margin-right: 60px ;
-    padding-top: 50px;   
-    width: 200px; 
-    text-align: center;
+    ;
 }
-.activites
-{
-    margin-right: 60px;
-    padding-top: 53px;
-}
-.inscription
-{
-    padding-top: 53px;
-    margin-right: 10px;
-    color: #0065FC;
-    font-weight: bold;
-} */
 
 /* mise en forme corps de la page 
  lignes de présentation du site */
@@ -94,7 +82,6 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     max-height: 20px;
     line-height: 15px ;
     max-width: 600px;
-    margin-bottom: ;
 }
 
 /* cadre recherche */
@@ -102,12 +89,12 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex; 
     flex-direction: row; 
-    height: 50px ;
+    max-height: 50px;
 }
 .fa-map-marker-alt /* icone map sur la recherche */
 {
     background-color: #F2F2F2;
-    width: 30px;
+    max-width: 50px;
     text-align: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -115,9 +102,9 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 .nomville
 {
     font-weight: bold;
-    border: 1px #F2F2F2 solid;
+    border: 2px #F2F2F2 solid;
     border-right: none;
-    font-size: 1em;
+    max-width: 235px;
 }
 .envoi
 {
@@ -126,9 +113,8 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-size: 1em;
     font-weight: bold;
-    width: 115px;
+    max-width: 135px;
 }
 .envoi_petite_resolution
 {
@@ -138,8 +124,9 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 /* cadre filtres */ 
 .filtres
 {
+    margin-top: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     flex-wrap: wrap;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /* icones des filtres */
@@ -153,12 +140,10 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 }
 .ecritfiltres /* écrit des filtres */
 {
-    font-size: 1em;
     font-weight: bold;
     border: 3px #F2F2F2 solid;
     border-left: none;
     border-radius: 20px;
-    width: auto;
     text-align: center;
 }
 .information_filtres
@@ -171,7 +156,8 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     background-color: #0065FC;
     color: white;
     border: 1px #F2F2F2 solid ;
-    border-radius: 20px;  
+    border-radius: 20px;
+    max-width: 20px;  
 }
 
 /* disposition cadre hébergement et hébergement populaire */
@@ -179,7 +165,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3%;
     max-height: 625px;
 }
@@ -188,29 +174,43 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex;
     flex-direction: column;
-    max-width: 417px;
+    justify-content: space-between ;
+    padding-bottom: 1%;
+    max-width: 420px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
+#disposition_populaire_image
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 112.5%;
+    font-weight: bold;
+}
 .fa-chart-line
 {
-    text-align: right; 
+    display: flex;
+    align-self: center;
 }
 .img_populaire
 {
-    height: 111px;
-    border-radius: 10px;
-    clip-path: inset(0 10px 0 0);
-    padding: 6px;
-    width: 140px;
+    max-height: 135px;
+    max-width: 135px;
+    border-radius: 20px;
+    clip-path: inset(0 20px 0 0);
+    object-position: 50% 50%;
+    padding: 2px;
 }
 .cadre_populaire
 {
     display: flex;
     flex-direction: row;
+    max-width: 350px;
+    max-height: 150px;
     background-color: white;
     border: 2px #F2F2F2 solid;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px;
     box-shadow: 1px 1px #F2F2F2 ;
 }
@@ -218,10 +218,18 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 155px;
+}
+.information_prix
+{
+    margin: 0; padding: 0;
+    font-size: 100%;
+    white-space: nowrap;
 }
 .note_populaire
 {
-    margin-top: 10px;
+    font-size: 75%;
 }
 /* mise en forme étoiles des notes */ 
 .fa-star
@@ -237,48 +245,61 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex;
     flex-direction: column;
-    width: 875px;
+    max-width: 880px;
     background-color: #F2F2F2;
     border-radius: 20px;
-}
-.img_hebergement          /* .img_auberge_cannebiere, .img_hotel_port, .img_hotel_mouettes, .img_hotel_mer, .img_auberge_panier, .img_hotel_amina */
-{
-    height: 95px;
-    border-radius: 20px;
-    clip-path: inset(0 0 10px 0);
 }
 .box_hebergement
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding-left: 20px;
 }
 .cadre_hebergement
 {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    max-width: 250px;
+    max-height: 200px;
     background-color: white;
     border-radius: 20px;
-    padding: 4px;
-    padding-bottom: 7px;
-    margin: 15px;
-    margin-left: 25px;
-    justify-content: space-between;
-    width: 28%;
     line-height: 6px;
     box-shadow: 1px 1px #F2F2F2 ;
+}
+.img_hebergement          /* .img_auberge_cannebiere, .img_hotel_port, .img_hotel_mouettes, .img_hotel_mer, .img_auberge_panier, .img_hotel_amina */
+{
+    max-height: 120px;
+    max-width: 245px;
+    border-radius: 20px;
+    padding: 2px;
+    clip-path: inset(0 0 20px 0);
+    object-position: 50% 50%;
 }
 .information_hebergement
 {
     padding-left: 20px;
 }
+.note_hebergement
+{
+    font-size: 100%;
+}
 
 /* mise en forme titre hebergement et hebergement populaire */
-.titre_h2
+.titre_categorie
 {
-    font-size: 16px;
+    font-size: 125%;
+    font-weight: bold;
+}
+.titre_hotel_populaire
+{   
+    font-size: 100%;
+    font-weight: bold;
+}
+.titre_hebergement
+{
+    margin: 0;
+    font-size: 100%;
 }
 
 
@@ -287,6 +308,8 @@ Mise en place de la disposition */
 .section_activite
 {
     margin-top: 3%;
+    max-height: 510px;
+    max-width: 1340px;
 }
 .activite_ville
 {
@@ -301,7 +324,7 @@ Mise en place de la disposition */
 }
 .box_cadre
 {
-    width: 24%;
+
 }
 /* Mise en place des cadres entourant les activités */ 
 .cadre_activite
@@ -311,51 +334,62 @@ Mise en place de la disposition */
     border: 3px #F2F2F2 solid ;
     border-radius: 20px;
     box-shadow: 1px 1px #F2F2F2 ;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
 }
 /* Mise en forme des images */ 
 .img_activite 
 {
     border-radius: 20px;
-    clip-path: inset(0 0 50px 0);
+    max-width: 310px;
+  
 }
 .img_activite.vieux_port, .img_activite.parc_calanques
 {
-    height: 500px;
+    height: 420px;
+    clip-path: inset(0 0 30px 0);
+    object-position: 100% 150%;
 }
 .img_activite.fort_pomegues
 {
-    height: 275px;
+    height: 240px;
 }
 .img_activite.ile_frioul
 {
-    height: 200px;
+    height: 170px;
 }
 .img_activite.dame_garde, .img_activite.parc_longchamp
 {
-    height: 240px;
+    height: 200px;
 }
 /* Mise en forme des noms activités */
 .nom_lieu_activite
 {
-    font-size: 15px;
-    padding-left: 20px;
+    margin: 0; padding: 0;
+    font-size: 100%;
+    font-weight: bold;
 }
 
 /* mise en forme pied de page */
 footer
 {
+    margin-left: -50px; margin-right: -50px; margin-bottom: -50px;
+    padding: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content :space-around ;
     background-color: #F2F2F2;
-    margin-top: 20px ;
+    margin-top: 4% ;
+    max-width: 1600px;
+    max-height: 300px;
+}
+footer:nth-child(1)
+{
+    display: flex;
+    justify-self: left;
 }
 .a_propos, .nos_hebergements, .assistance
 {
     margin: 15px;
     padding: 15px;
-    padding-right: 300px;
+    white-space: nowrap;
     line-height: 30px;
 }
 
@@ -473,7 +507,7 @@ footer
     }
     .assistance
     {
-        white-space: nowrap;
+        
         margin-bottom: -20px;
     }
 }
