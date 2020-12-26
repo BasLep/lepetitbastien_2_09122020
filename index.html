@@ -23,31 +23,34 @@
            </header>    
     
         <div id="section_information_recherche"> <!-- cadre recherche et filtre -->
-            
-                <p class="introduction_site">
-                    <h2 id="texte_introduction_grand">Trouvez votre hébergements pour des vacances de rêve</h2>
-                    En plein centre ville ou en pleine nature.
-                </p>
-            <div class="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="nomville" maxlength="100" Value="Marseille, France" class="nomville"> <!-- Usage "value" plutôt que "placeholder" car recherche déjà effectué pour le prototype-->
-                <input type="submit" value="Rechercher" class="envoi">
-                <button class="envoi_petite_resolution" type="button"><i class="fas fa-search"></i></button>
+            <div class="introduction_site">
+                <h2 id="texte_introduction_grand">Trouvez votre hébergements pour des vacances de rêve</h2>
+                <p id="texte_introduction_petit">En plein centre ville ou en pleine nature.</p>
             </div>
+            <div class="recherche">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <input type="text" name="nomville" maxlength="100" Value="Marseille, France" class="nomville"> <!-- Usage "value" plutôt que "placeholder" car recherche déjà effectué pour le prototype-->                
+                <button type="button" id="envoi">Rechercher</button>
+                <button id="envoi_petite_resolution" type="button"><i class="fas fa-search"></i></button>        
+            </div>
+
             <div class="filtres">
                 <strong class="titrefiltres">Filtres</strong>
                 <div class="groupe_information_filtres">
                     <div class="ecritfiltres">
-                        <i class="fas fa-money-bill-wave"></i>Économique
+                        <i class="fas fa-money-bill-wave centrage_icone"></i>               
+                        Économique                        
                     </div>
                     <div class="ecritfiltres">
-                        <i class="fas fa-child"></i>Familial
+                        <i class="fas fa-child centrage_icone"></i>Familial
                     </div>
                     <div class="ecritfiltres">
-                        <i class="fas fa-heart"></i>Romantique
+                        <i class="fas fa-heart centrage_icone"></i>Romantique
                     </div>
                     <div class="ecritfiltres">
-                        <i class="fas fa-dog"></i>Animaux autorisés
+                        <i class="fas fa-dog centrage_icone"></i>Animaux autorisés
                     </div>
                 </div>
             </div>
@@ -62,40 +65,42 @@
                     <h2>Les plus populaires</h2>  
                     <i class="fas fa-chart-line"></i>
                 </div>
-                <div class="cadre_populaire hotel_soleilmatin"> <!-- Hôtel Le soleil du matin -->            
-                    <img src="images/hebergements/4_small/hotel_soleilmatin_e_guillermot.jpg" alt="Hôtel Le soleil du matin, crédit Emile Guillermot" class="img_populaire img_hotel_soleilmatin"> 
-                    <div class="box_information_populaire">
-                        <h2 class="titre_hotel_populaire">Hôtel Le soleil du matin</h2>
-                        <p class="information_prix">
-                            Nuit à partir de <strong>128€</strong>
-                        </p>
-                        <div class="note_populaire">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    </div>
-                </div>
-                <div class="cadre_populaire"> <!-- Chambres d'hôtes au coeur de l'eau -->
-                    <img src="images/hebergements/4_small/chambrehote_awcreative.jpg" alt="Chambres d'hôte au coeur de l'eau, crédit AW creative" class="img_populaire img_chambrehote_coeureau">
-                    <div class="box_information_populaire">
-                        <h2 class="titre_hotel_populaire">Au coeur de l'eau <br>Chambres d'hôtes</h2>
-                        <p class="information_prix">
-                            Nuit à partir de <strong>71€</strong>
-                        </p>
-                        <div class="note_populaire">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i>
+                <div id="ensemble_cadre_populaire">
+                    <div class="cadre_populaire"> <!-- Hôtel Le soleil du matin -->            
+                        <img src="images/hebergements/4_small/hotel_soleilmatin_e_guillermot.jpg" alt="Hôtel Le soleil du matin, crédit Emile Guillermot" class="img_populaire img_hotel_soleilmatin"> 
+                        <div class="box_information_populaire">
+                            <h2 class="titre_hotel_populaire">Hôtel Le soleil du matin</h2>
+                            <p class="information_prix">
+                                Nuit à partir de <strong>128€</strong>
+                            </p>
+                            <div class="note_populaire">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </div>
-                </div>
-                <div class="cadre_populaire"> <!-- Hotel Tout Bleu et Tout Blanc -->
-                    <img src="images/hebergements/4_small/hotel_toutbleublanc_f_zakaria.jpg" alt="Hôtel Tout bleu et blanc, crédit Febrian Zakaria" class="img_populaire img_hotel_bleublanc">
-                    <div class="box_information_populaire">
-                        <h2 class="titre_hotel_populaire">Hôtel Tout Bleu et Tout Blanc</h2>
-                        <p class="information_prix">
-                            Nuit à partir de <strong>68€</strong>
-                        </p>
-                        <div class="note_populaire">   
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i>
-                        </div> 
-                    </div>          
+                    <div class="cadre_populaire"> <!-- Chambres d'hôtes au coeur de l'eau -->
+                        <img src="images/hebergements/4_small/chambrehote_awcreative.jpg" alt="Chambres d'hôte au coeur de l'eau, crédit AW creative" class="img_populaire img_chambrehote_coeureau">
+                        <div class="box_information_populaire">
+                            <h2 class="titre_hotel_populaire">Au coeur de l'eau <br>Chambres d'hôtes</h2>
+                            <p class="information_prix">
+                                Nuit à partir de <strong>71€</strong>
+                            </p>
+                            <div class="note_populaire">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadre_populaire"> <!-- Hotel Tout Bleu et Tout Blanc -->
+                        <img src="images/hebergements/4_small/hotel_toutbleublanc_f_zakaria.jpg" alt="Hôtel Tout bleu et blanc, crédit Febrian Zakaria" class="img_populaire img_hotel_bleublanc">
+                        <div class="box_information_populaire">
+                            <h2 class="titre_hotel_populaire">Hôtel Tout Bleu et Tout Blanc</h2>
+                            <p class="information_prix">
+                                Nuit à partir de <strong>68€</strong>
+                            </p>
+                            <div class="note_populaire">   
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star empty"></i>
+                            </div> 
+                        </div>          
+                    </div>
                 </div>
             </div>
 
