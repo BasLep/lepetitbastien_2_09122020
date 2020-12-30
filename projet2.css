@@ -8,6 +8,9 @@
 body
 {
     font-family: 'Raleway';
+}
+.body_et_footer
+{
     margin: auto;
     min-width: 375px;
     max-width: 1440px;
@@ -41,7 +44,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 #nom_site_logo
 {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 #logo
 {
@@ -54,6 +57,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     justify-content: space-between;
     margin-right: 50px;
     margin-left: 50px;
+    margin-top: 16px;
 }
 #disposition_menu
 {
@@ -159,6 +163,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     border-radius: 30px;
     color: #0065FC;
     background-color: #deebff ;
+    margin-right: 15px;
 }
 .fas.centrage_icone
 {
@@ -174,8 +179,9 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     font-weight: bold;
     border: 3px #F2F2F2 solid;
     border-left: none;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-right: 20px;
+    padding-right: 20px;
 }
 .information_filtres
 {
@@ -417,16 +423,14 @@ Mise en place de la disposition */
 footer
 {
     padding: 0;
-    display: flex;
-    justify-content :space-around ;
     background-color: #F2F2F2;
     margin-top: 60px ;
-    width: calc(100% + 100px);
 }
-footer:nth-child(1)
+.disposition_footer
 {
     display: flex;
-    justify-self: left;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .a_propos, .nos_hebergements, .assistance
 {
@@ -624,7 +628,7 @@ footer:nth-child(1)
         height: 160px;
     }
     /* pied de page */
-    footer
+    .disposition_footer
     {
         display: flex;
         flex-direction: column;
