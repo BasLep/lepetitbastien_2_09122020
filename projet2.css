@@ -8,11 +8,12 @@
 body
 {
     font-family: 'Raleway';
+    margin: 0;
 }
 .body_et_footer
 {
     margin: auto;
-    min-width: 375px;
+    min-width: 320px;
     max-width: 1440px;
 }
 
@@ -26,6 +27,7 @@ a
 a.lien_nav:link, a.lien_nav:visited
 {
     color: black;
+    padding-right: 20px; padding-left: 20px;
 }
 a.lien_nav:hover, a.lien_nav_inscription:hover
 {
@@ -38,6 +40,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     font-weight: bold;
     color: #0065FC;
+    padding-right: 20px; padding-left: 20px;
 }
 /* Disposition header
 /* mise en forme logo */
@@ -51,7 +54,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     height: 30px;
 }
 /*  mise en forme menu de navigation */ 
-#disposition_header
+header
 {
     display: flex;
     justify-content: space-between;
@@ -61,6 +64,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 }
 #disposition_menu
 {
+    display: flex;
     list-style-type: none;
     margin: 0;
 }
@@ -85,11 +89,12 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     margin: 0px;
     max-width: 600px;
     margin-bottom: 20px;
+    line-height: 15pw;
 }
 #texte_introduction_grand
 {
     margin: 0 ; padding: 0;
-    font-size: 100%;
+    font-size: larger;
 }
 #texte_introduction_petit
 {
@@ -121,6 +126,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     border: 2px #F2F2F2 solid;
     border-right: none;
     max-width: 240px;
+    font-size: medium;
     padding-left: 15px;
 }
 #envoi
@@ -131,7 +137,8 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: bold;
-    max-width: 135px;
+    width: 135px;
+    font-size: medium;
 }
 #envoi_petite_resolution
 {
@@ -144,8 +151,8 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom:  50px;
+    margin-top: 35px;
+    margin-bottom:  15px;
 }
 .titrefiltres
 {
@@ -156,6 +163,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 .groupe_information_filtres
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /* icones des filtres */
 {
@@ -182,6 +190,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     border-radius: 30px;
     margin-right: 20px;
     padding-right: 20px;
+    margin-bottom: 15px;
 }
 .information_filtres
 {
@@ -247,7 +256,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: calc(100% - 40px);
     height: 150px;
     background-color: white;
     border: 2px #F2F2F2 solid;
@@ -259,7 +268,6 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 155px;
 }
 .titre_hotel_populaire
@@ -272,6 +280,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     margin: 0; padding: 0;
     font-size: 100%;
     white-space: nowrap;
+    margin-bottom: 45px;
 }
 .note_populaire
 {
@@ -307,8 +316,8 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .cadre_hebergement
 {
@@ -372,7 +381,7 @@ Mise en place de la disposition */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 24%;
+    width: 23%;
 }
 /* Mise en place des cadres entourant les activités */ 
 .cadre_activite
@@ -385,7 +394,7 @@ Mise en place de la disposition */
 .box_grande_photo
 {
     max-height: 450px ;   
-    width: 24%; 
+    width: 23%; 
 }
 .box_fort_pomegues
 {
@@ -406,15 +415,16 @@ Mise en place de la disposition */
 /* Mise en forme des images */ 
 .img_activite 
 {
-    border-radius: 20px;
-    clip-path: inset(0 0 50px 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-fit: cover;
-    height: 93.3%;
+    height: calc(100% - 55px);
 }
 /* Mise en forme des noms activités */
 .nom_lieu_activite
 {
     margin: 0; padding: 0;
+    padding-top: 15px;
     padding-left: 20px;
     font-weight: bold;
 }
@@ -460,7 +470,6 @@ footer
 {
     #section_hebergement_et_populaire
     {
-        display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
@@ -480,15 +489,16 @@ footer
     }
 }
 /* Mise en page pour les écrans inférieur à 900px et supérieur à 375px */
-@media screen and (min-width: 375px) and (max-width: 850px)
+@media screen and (max-width: 850px)
 {
     /* modification header */
     /* mise en forme des liens */
     a.lien_nav:link, a.lien_nav:visited
     {
-        border-bottom: 2px #deebff solid;
-        padding-bottom: 15px;
-        padding-left: 100px;       
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 15px;   
+        padding-left: 50px;
+        padding-right: 60px;
     }
     a.lien_nav:hover
     {
@@ -501,18 +511,16 @@ footer
     {
         margin-bottom: 25px;
     }
-    #disposition_header
+    header
     {
-        display: flex;
         flex-direction: column;
         margin-right: 20px;
         margin-left: 20px;
     }
     #disposition_menu
     {
-        display: flex;
-        justify-content: space-around;
         margin-bottom: 30px;
+        justify-content: center;
     }
     .puce_menu
     {
@@ -521,8 +529,9 @@ footer
     }
     .puce_menu.menu_inscription
     {
-        margin-top: -50px;
-        padding-right: 150px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
     }
 
     /* modification corps de page 
@@ -532,15 +541,10 @@ footer
         margin-right: 20px;
         margin-left: 20px;
     }
-    .introduction_site
-    {
-        font-size: 87.5% ;
-        line-height: 10px;
-    }
     /* zone recherche */
-    .recherche
+    .nomville
     {
-        min-width: 240px;
+        max-width: 170px;
     }
     #envoi
     {
@@ -558,8 +562,6 @@ footer
     /* zone filtre */
     .groupe_information_filtres
     {
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 20px;
     }
     /* zone hebergement */
@@ -633,5 +635,6 @@ footer
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        padding-left: 20px;
     }
 }
