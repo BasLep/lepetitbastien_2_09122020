@@ -268,7 +268,6 @@ header
 {
     display: flex;
     flex-direction: column;
-    width: 155px;
 }
 .titre_hotel_populaire
 {   
@@ -624,10 +623,11 @@ footer
     .cadre_activite
     {
         margin-bottom: 25px;
+        height: 190px;
     }
     .img_activite
     {
-        height: 160px;
+        height: calc(100% - 45px);
     }
     /* pied de page */
     .disposition_footer
@@ -636,5 +636,29 @@ footer
         flex-direction: column;
         justify-content: flex-end;
         padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    a.lien_nav:link, a.lien_nav:visited
+    {
+        padding-left: 15px;
+    }
+    .nomville
+    {
+        width: 150px;
+    }
+    .img_populaire
+    {
+        width: 120px;
+    }
+    .cadre_populaire
+    {
+        width: calc(100% - 27px);
+    }
+    .box_information_populaire
+    {
+        font-size: smaller;
     }
 }
