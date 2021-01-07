@@ -446,8 +446,16 @@ footer
     margin: 15px;
     padding: 15px;
     white-space: nowrap;
-    line-height: 30px;
+    font-size: smaller;
+    line-height: 25px;
 }
+.titre_footer
+{
+    margin: 0; 
+    padding: 0;
+    font-size: medium ;
+}
+
 
 @media screen and (max-width: 1250px)
 {
