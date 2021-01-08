@@ -15,7 +15,7 @@
             <header>
                 <h1 id="nom_site_logo"><img src="images/logo/logo_reservia.png" alt="Reservia" id="logo"></h1>
                 <ul id="disposition_menu">
-                    <li class="puce_menu menu_hebergement"><a href="#herbegement" title="Accès hébergement" class="lien_nav">Hébergements</a></li> <!-- doit renvoyer sur la section de la page -->
+                    <li class="puce_menu menu_hebergement"><a href="#hebergement" title="Accès hébergement" class="lien_nav">Hébergements</a></li> <!-- doit renvoyer sur la section de la page -->
                     <li class="puce_menu menu_activites"><a href="#activites" title="Accès activités" class="lien_nav">Activités</a></li> <!-- doit renvoyer sur la section de la page -->
                     <li class="puce_menu menu_inscription"><a href="#" title="S'inscrire" class="lien_nav_inscription">S'inscrire</a></li>
                 </ul>
@@ -23,16 +23,18 @@
         
             <div id="section_information_recherche"> <!-- cadre recherche et filtre -->
                 <div class="introduction_site">
-                    <h2 id="texte_introduction_grand">Trouvez votre hébergements pour des vacances de rêve</h2>
+                    <h2 id="texte_introduction_grand">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p id="texte_introduction_petit">En plein centre ville ou en pleine nature.</p>
                 </div>
                 <div class="recherche">
                     <div>
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <input type="text" name="nomville" maxlength="100" Value="Marseille, France" class="nomville"> <!-- Usage "value" plutôt que "placeholder" car recherche déjà effectué pour le prototype-->                
-                    <button type="button" id="envoi">Rechercher</button>
-                    <button id="envoi_petite_resolution" type="button"><i class="fas fa-search"></i></button>        
+                    <input type="text" name="nomville" maxlength="100" placeholder="Marseille, France" class="nomville"> <!-- Usage placeholder même si sur maquette la recherche semble déjà effectué pour le prototype-->                
+                    <button type="button" id="envoi">
+                        <p id="button_text">Rechercher</p>
+                        <i class="fas fa-search"></i>
+                    </button>       
                 </div>
 
                 <div class="filtres">
@@ -66,14 +68,16 @@
                     </div>
                     <div id="ensemble_cadre_populaire">
                         <div class="cadre_populaire"> <!-- Hôtel Le soleil du matin -->            
-                            <img src="images/hebergements/4_small/hotel_soleilmatin_e_guillermot.jpg" alt="Hôtel Le soleil du matin, crédit Emile Guillermot" class="img_populaire img_hotel_soleilmatin"> 
+
+                                <img src="images/hebergements/4_small/hotel_soleilmatin_e_guillermot.jpg" alt="Hôtel Le soleil du matin, crédit Emile Guillermot" class="img_populaire img_hotel_soleilmatin"> 
                             <div class="box_information_populaire">
                                 <h2 class="titre_hotel_populaire">Hôtel Le soleil du matin</h2>
                                 <p class="information_prix">
                                     Nuit à partir de <strong>128€</strong>
                                 </p>
                                 <div class="note_populaire">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="cadre_populaire"> <!-- Chambres d'hôtes au coeur de l'eau -->
