@@ -451,20 +451,25 @@ footer
     padding: 0;
     background-color: #F2F2F2;
     margin-top: 60px ;
+ 
 }
 .disposition_footer
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row;   
 }
 .a_propos, .nos_hebergements, .assistance
 {
-    margin: 15px;
-    padding: 15px;
+    margin: 15px 0;
+    padding: 15px 0;
+    padding-right: 20%;
     white-space: nowrap;
     font-size: medium;
     line-height: 25px;
+}
+.a_propos
+{
+    padding-left: 50px;
 }
 .titre_footer
 {
@@ -655,7 +660,10 @@ footer
     {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+    }
+    .a_propos, .nos_hebergements, .assistance
+    {
+       padding-left: 20px;
     }
 }
 @media screen and (max-width: 550px)
@@ -700,10 +708,6 @@ footer
     }
     .cadre_populaire
     {
-        width: calc(100% - 28px);
-    }
-    .box_information_populaire
-    {
-        font-size: smaller;
+        width: calc(100% - 20px);
     }
 }
