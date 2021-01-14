@@ -103,6 +103,7 @@ header
 {
     margin: 0 ; padding: 0;
     font-size: larger;
+    line-height: 25px;
 }
 #texte_introduction_petit
 {
@@ -460,13 +461,14 @@ footer
 .disposition_footer
 {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;   
 }
 .a_propos, .nos_hebergements, .assistance
 {
     margin: 15px 0;
     padding: 15px 0;
-    padding-right: 20%;
+    padding-right: 100px;
     white-space: nowrap;
     font-size: medium;
     line-height: 25px;
@@ -670,7 +672,7 @@ footer
        padding-left: 20px;
     }
 }
-@media screen and (max-width: 550px)
+@media screen and (max-width: 600px)
 {
     /* activité */
     .section_activite
