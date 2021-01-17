@@ -56,7 +56,7 @@ a.lien_nav_inscription:link, a.lien_nav_inscription:visited
     display: flex;
     flex-direction: column;
 }
-a.link_img_populary:visited, a.link_img_lodging:visited, a.link_img_activity:visited
+a.link_img_populary:link, a.link_img_lodging:link, a.link_img_activity:link, a.link_img_populary:visited, a.link_img_lodging:visited, a.link_img_activity:visited
 {
     color: black;
 }
